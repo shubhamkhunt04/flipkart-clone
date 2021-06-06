@@ -53,6 +53,7 @@ const Dashboard = () => {
         templateRows='repeat(2, 1fr)'
         templateColumns='repeat(5, 1fr)'
         gap={4}
+        height='100vh'
       >
         <GridItem rowSpan={2} colSpan={1} borderRight='1px solid black'>
           <Text fontSize='25px' mb='2'>
@@ -108,7 +109,7 @@ const Dashboard = () => {
             onClick={lowToHighHandler}
             m='2'
           >
-            Sort low to heigh
+            Price - low to high
           </Button>
           <Button
             colorScheme='twitter'
@@ -116,7 +117,7 @@ const Dashboard = () => {
             onClick={highToLowHandler}
             m='2'
           >
-            heigh to low
+            Price - high to low
           </Button>
           <Button colorScheme='twitter' size='xs' onClick={clearFilter} m='2'>
             Clear filter
