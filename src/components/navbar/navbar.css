@@ -1,0 +1,18 @@
+.navWrapper {
+    display: flex;
+    align-items: center;
+    background-color: blue;
+    color: white;
+    height: 3rem;
+}
+
+.navItemWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 180px;
+}
+
+.navItemWrapper>div {
+    padding-left: 4rem;
+}
