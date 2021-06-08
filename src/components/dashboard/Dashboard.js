@@ -9,11 +9,11 @@ const Dashboard = () => {
   const [products, setProducts] = useState(productData);
   const [selectedSize, setSelectedSize] = useState([]);
 
-  const lowToHighHandler = () => {
+  const highToLowHandler = () => {
     setProducts([...productData].sort((a, b) => b.price - a.price));
   };
 
-  const highToLowHandler = () => {
+  const lowToHighHandler = () => {
     setProducts([...productData].sort((a, b) => a.price - b.price));
   };
 
@@ -106,18 +106,18 @@ const Dashboard = () => {
           <Button
             colorScheme='twitter'
             size='xs'
-            onClick={lowToHighHandler}
-            m='2'
-          >
-            Price - low to high
-          </Button>
-          <Button
-            colorScheme='twitter'
-            size='xs'
             onClick={highToLowHandler}
             m='2'
           >
             Price - high to low
+          </Button>
+          <Button
+            colorScheme='twitter'
+            size='xs'
+            onClick={lowToHighHandler}
+            m='2'
+          >
+            Price - low to high
           </Button>
           <Button colorScheme='twitter' size='xs' onClick={clearFilter} m='2'>
             Clear filter
